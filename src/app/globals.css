@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+/* tailwind css classes */
+@theme {
+    --color-primary-400: var(--primary-400);
+    --color-primary-200: var(--primary-200); 
+    --color-primary-100: var(--primary-100);
+
+    --color-accent: var(--accent);
+    --color-success: var(--success);
+    --color-error: var(--error);
+
+    --color-background-200: var(--background-200);
+    --color-background-100: var(--background-100);
+
+    --color-border: var(--border);
+    --color-text-200: var(--text-200);
+    --color-text-100: var(--text-100);
+    --color-muted-200: var(--muted-200);
+    --color-muted-100: var(--muted-100);
+}
+
+/* color variables */
+:root {
+    --primary-400: #4C1D95;
+    --primary-200: #7C3AED;
+    --primary-100: #A78BFA;
+    --accent: #FBBF24;
+    --success: #22C55E;
+    --error: #EF4444;
+    --background-200: #FFFFFF;
+    --background-100: #F5F3FF;
+    --border: #E4E4F7;
+    --text-200: #111827;
+    --text-100: #4B5563;
+    --muted-200: #F5F3FF;
+    --muted-100: #C4BEE5;
+
+    --class-1: #A78BFA;
+    --class-2: #FCD34D;
+    --class-3: #93C5FD;
+    --class-4: #86EFAC;
+    --class-5: #FDBA74;
+    --class-6: #FCA5A5;
+    --class-7: #F9A8D4;
+    --class-8: #7DD3FC;
+}
+
+/* dark theme colors */
+.dark {
+    --success: #4ADE80;
+    --error: #f74747;
+    --background-200: #1B1533;
+    --background-100: #0F0A1F;
+    --border: #2A2445;
+    --text-200: #F5F3FF;
+    --text-100: #C4BEE5;
+    --muted-200: #111827;
+    --muted-100: #4B5563;
+}
+
+/* scroll bar styles */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-400) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-400);
+    border-radius: 9999px;
+    width: 8px;
+}
+
+/* react calendar styles override */
+.react-calendar {
+    border: none !important;
+    background: var(--background-200) !important;
+    width: 100% !important;
+    min-width: 10px !important;
+}
+
+.react-calendar__tile {
+    color: var(--text-200) !important;
+    border-radius: 10px !important;
+}
+
+.react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+    background-color: var(--background-100) !important;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth, .react-calendar__decade-view__years__year--neighboringDecade, .react-calendar__century-view__decades__decade--neighboringCentury {
+    color: var(--text-100) !important;
+    opacity: 0.7;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: var(--error) !important;
+}
+
+.react-calendar__tile--active:enabled {
+    background: var(--primary-200) !important;
+    color: var(--muted-200) !important;
+}
+
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: var(--primary-100) !important;
+}
+
+.react-calendar__navigation button:enabled {
+    border-radius: 10px !important;
+    font-size: 14px !important;
+}
+
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus {
+    background-color: var(--background-100) !important;
+}
+
+
+/* react big calendar styles override */
+.rbc-btn-group:first-child {
+    display: none !important;
+}
+
+.rbc-toolbar {
+    flex-direction: row !important;
+    justify-content: end !important;
+    align-items: center !important;
+}
+
+.rbc-toolbar-label {
+    font-size: small !important;
+    font-weight: 500 !important;
+    text-align: right !important;
+}
+
+.rbc-btn-group button {
+    background-color: var(--background-200) !important;
+    border-color: var(--border) !important;
+    color: var(--text-200) !important;
+    font-size: small;
+}
+
+.rbc-toolbar button.rbc-active {
+    background-color: var(--primary-400) !important;
+    color: var(--muted-200) !important;
+    box-shadow: none !important;
+}
+
+.rbc-btn-group button:hover {
+    background-color: var(--primary-100) !important;
+    transition: all cubic-bezier(0.4,0,0.2,1) 150ms;
+}
+
+.rbc-time-view {
+    border-color: var(--border) !important;
+}
+
+.rbc-time-header-content {
+    display: none !important;
+}
+
+.rbc-time-content {
+    border: none !important;
+}
+
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+    font-size: small !important;
+    font-weight: 500 !important;
+    padding: 16px 8px;
+}
+
+.rbc-day-slot .rbc-events-container {
+    margin: 0 !important;
+}
+
+.rbc-events-container {
+    border-color: var(--border) !important;
+}
+
+.rbc-today {
+    background-color: var(--background-100) !important;
+}
+
+.rbc-current-time-indicator {
+    background-color: var(--primary-400) !important;
+    height: 2px !important;
+    border-color: var(--border) !important;
+}
+
+.rbc-timeslot-group {
+    border-color: var(--border) !important;
+}
+
+.rbc-time-slot {
+    border-color: var(--border) !important;
+}
+
+.rbc-event {
+    width: 100% !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+}
+
+.rbc-event:nth-child(1) {
+    background-color: var(--class-1) !important;
+}
+
+.rbc-event:nth-child(2) {
+    background-color: var(--class-2) !important;
+}
+
+.rbc-event:nth-child(3) {
+    background-color: var(--class-3) !important;
+}
+
+.rbc-event:nth-child(4) {
+    background-color: var(--class-4) !important;
+}
+
+.rbc-event:nth-child(5) {
+    background-color: var(--class-5) !important;
+}
+
+.rbc-event:nth-child(6) {
+    background-color: var(--class-6) !important;
+}
+
+.rbc-event:nth-child(7) {
+    background-color: var(--class-7) !important;
+}
+
+.rbc-event:nth-child(8) {
+    background-color: var(--class-8) !important;
+}
+
+.rbc-event-label {
+    font-size: x-small !important;
+    color: #4B5563 !important;
+}
+
+.rbc-event-content {
+    height: fit-content !important;
+    min-height: 5px !important;
+    font-size: small !important;
+    font-weight: 600 !important;
+    color: #111827 !important;
+    padding: 0px 10px !important;
+}
