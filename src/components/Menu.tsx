@@ -80,23 +80,17 @@ const Menu = () => {
                 </Link>
             </li>
             <li> 
-                <Link href="/list/attendance" className="flex items-center justify-center gap-2 lg:justify-start p-2 rounded hover:bg-primary-100 transition-colors">
-                    <ClipboardCheck className="size-5"/>
-                    <span className="hidden lg:block">Attendance</span>
-                </Link>
-            </li>
-            <li> 
                 <Link href="/list/events" className="flex items-center justify-center gap-2 lg:justify-start p-2 rounded hover:bg-primary-100 transition-colors">
                     <CalendarDays className="size-5"/>
                     <span className="hidden lg:block">Events</span>
                 </Link>
             </li>
-            <li> 
+            {/* <li> 
                 <Link href="/list/messages" className="flex items-center justify-center gap-2 lg:justify-start p-2 rounded hover:bg-primary-100 transition-colors">
                     <MessageCircleMore className="size-5"/>
                     <span className="hidden lg:block">Messages</span>
                 </Link>
-            </li>
+            </li> */}
             <li> 
                 <Link href="/list/announcements" className="flex items-center justify-center gap-2 lg:justify-start p-2 rounded hover:bg-primary-100 transition-colors">
                     <Megaphone className="size-5"/>
