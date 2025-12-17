@@ -16,8 +16,19 @@
     --color-border: var(--border);
     --color-text-200: var(--text-200);
     --color-text-100: var(--text-100);
+    --color-fixed-200: #111827;
+    --color-fixed-100: #4B5563;
     --color-muted-200: var(--muted-200);
     --color-muted-100: var(--muted-100);
+
+    --color-class-1: var(--class-1);
+    --color-class-2: var(--class-2);
+    --color-class-3: var(--class-3);
+    --color-class-4: var(--class-4);
+    --color-class-5: var(--class-5);
+    --color-class-6: var(--class-6);
+    --color-class-7: var(--class-7);
+    --color-class-8: var(--class-8);
 }
 
 /* color variables */
